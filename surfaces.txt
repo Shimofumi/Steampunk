@@ -1,0 +1,684 @@
+charset,UTF-8
+
+descript
+{
+	version,1
+}
+
+// ベースになる画像を指定
+surface0-9,21-39,95-98,1000-1009,1021-1039,1095-1098
+{
+	element0,base,surface0.png,0,0
+}
+
+surface40-49,90,1040-1049,1090
+{
+	element0,base,surface300.png,0,0
+}
+
+surface50-59,94,1050-1059,1094
+{
+	element0,base,surface400.png,0,0
+}
+
+surface60-69,91-93,1060-1069,1091-1093
+{
+	element0,base,surface500.png,0,0
+}
+
+surface70-89,1070-1089
+{
+	element0,base,surface600.png,0,0
+}
+
+surface10,1010
+{
+	element0,base,surface10.png,0,0
+}
+
+// 触り領域を設定
+// 1000～は触り領域のないサーフェスで、
+// 表示されるのは1000を引いたサーフェスと同じもの
+surface.append0-9,21-39,95-99
+{
+	// 触り領域
+    collisionex0,head,region,surface0_collision.png,255,0,0
+    collisionex1,hair,region,surface0_collision.png,0,0,255
+    collisionex2,eye,region,surface0_collision.png,255,0,255
+    collisionex3,cheek,region,surface0_collision.png,0,255,255
+    collisionex4,lip,region,surface0_collision.png,255,255,0
+    collisionex5,neck,region,surface0_collision.png,0,255,0
+    collisionex6,bust,region,surface0_collision.png,128,0,0
+    collisionex7,shoulder,region,surface0_collision.png,0,128,0
+    collisionex8,upperarm,region,surface0_collision.png,0,0,128
+    collisionex9,stomach,region,surface0_collision.png,128,128,0
+    collisionex10,hand,region,surface0_collision.png,0,128,128
+    collisionex11,skirt,region,surface0_collision.png,128,0,128
+    collisionex12,leg,region,surface0_collision.png,64,0,0
+    collisionex13,hat,region,surface0_collision.png,0,0,64
+
+}
+
+surface.append40-49,90
+{
+	// 触り領域
+    collisionex0,head,region,surface300_collision.png,255,0,0
+    collisionex1,hair,region,surface300_collision.png,0,0,255
+    collisionex2,eye,region,surface300_collision.png,255,0,255
+    collisionex3,cheek,region,surface300_collision.png,0,255,255
+    collisionex4,bust,region,surface300_collision.png,128,0,0
+    collisionex5,shoulder,region,surface300_collision.png,0,128,0
+    collisionex6,armpit,region,surface300_collision.png,255,255,128
+    collisionex7,upperarm,region,surface300_collision.png,0,0,128
+    collisionex8,stomach,region,surface300_collision.png,128,128,0
+    collisionex9,hand,region,surface300_collision.png,0,128,128
+    collisionex10,skirt,region,surface300_collision.png,128,0,128
+    collisionex11,leg,region,surface300_collision.png,64,0,0
+    collisionex12,hat,region,surface300_collision.png,0,0,64
+}
+
+surface.append50-59,94
+{
+	// 触り領域
+    collisionex0,head,region,surface400_collision.png,255,0,0
+    collisionex1,hair,region,surface400_collision.png,0,0,255
+    collisionex2,eye,region,surface400_collision.png,255,0,255
+    collisionex3,cheek,region,surface400_collision.png,0,255,255
+    collisionex4,lip,region,surface400_collision.png,255,255,0
+    collisionex5,neck,region,surface400_collision.png,0,255,0
+    collisionex6,bust,region,surface400_collision.png,128,0,0
+    collisionex7,shoulder,region,surface400_collision.png,0,128,0
+    collisionex8,upperarm,region,surface400_collision.png,0,0,128
+    collisionex9,stomach,region,surface400_collision.png,128,128,0
+    collisionex10,hand,region,surface400_collision.png,0,128,128
+    collisionex11,skirt,region,surface400_collision.png,128,0,128
+    collisionex12,leg,region,surface400_collision.png,64,0,0
+    collisionex13,hat,region,surface400_collision.png,0,0,64
+}
+
+surface.append60-69,91-93
+{
+	// 触り領域
+    collisionex0,head,region,surface500_collision.png,255,0,0
+    collisionex1,hair,region,surface500_collision.png,0,0,255
+    collisionex2,eye,region,surface500_collision.png,255,0,255
+    collisionex3,cheek,region,surface500_collision.png,0,255,255
+    collisionex4,lip,region,surface500_collision.png,255,255,0
+    collisionex5,bust,region,surface400_collision.png,128,0,0
+    collisionex6,shoulder,region,surface400_collision.png,0,128,0
+    collisionex7,stomach,region,surface400_collision.png,128,128,0
+    collisionex8,hand,region,surface400_collision.png,0,128,128
+    collisionex9,skirt,region,surface400_collision.png,128,0,128
+    collisionex10,leg,region,surface400_collision.png,64,0,0
+    collisionex11,hat,region,surface400_collision.png,0,0,64
+}
+
+surface.append70-89
+{
+	// 触り領域
+    collisionex0,head,region,surface600_collision.png,255,0,0
+    collisionex1,hair,region,surface600_collision.png,0,0,255
+    collisionex2,eye,region,surface600_collision.png,255,0,255
+    collisionex3,cheek,region,surface600_collision.png,0,255,255
+    collisionex4,lip,region,surface600_collision.png,255,255,0
+    collisionex5,neck,region,surface600_collision.png,0,255,0
+    collisionex6,bust,region,surface600_collision.png,128,0,0
+    collisionex7,shoulder,region,surface600_collision.png,0,128,0
+    collisionex8,upperarm,region,surface600_collision.png,0,0,128
+    collisionex9,stomach,region,surface600_collision.png,128,128,0
+    collisionex10,hand,region,surface600_collision.png,0,128,128
+    collisionex11,skirt,region,surface600_collision.png,128,0,128
+    collisionex12,leg,region,surface600_collision.png,64,0,0
+    collisionex13,hat,region,surface600_collision.png,0,0,64
+}
+
+// 個々のサーフェスの設定項目を記述
+// 上書きする表情画像と、瞬きアニメーションを定義する
+surface.append0,1000
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8192,0-800,0,0
+	animation0.pattern1,overlay,8191,50,0,0
+	animation0.pattern2,overlay,8192,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface.append1,1001
+{
+	element1,overlay,surface101.png,0,0
+}
+
+surface.append2,1002
+{
+	element1,overlay,surface102.png,0,0
+}
+
+surface.append3,1003
+{
+	element1,overlay,surface103.png,0,0
+}
+
+surface.append4,1004
+{
+	element1,overlay,surface104.png,0,0
+}
+
+surface.append5,1005
+{
+	element1,overlay,surface105.png,0,0
+}
+
+surface.append6,1006
+{
+	element1,overlay,surface106.png,0,0
+}
+
+surface.append7,1007
+{
+	element1,overlay,surface107.png,0,0
+}
+
+surface.append8,1008
+{
+	element1,overlay,surface108.png,0,0
+}
+
+surface.append9,1009
+{
+	element1,overlay,surface109.png,0,0
+}
+
+surface.append21,1021
+{
+	element1,overlay,surface200.png,0,0
+}
+
+surface.append22,1022
+{
+	element1,overlay,surface201.png,0,0
+}
+
+surface.append23,1023
+{
+	element1,overlay,surface202.png,0,0
+}
+
+surface.append24,1024
+{
+	element1,overlay,surface203.png,0,0
+}
+
+surface.append25,1025
+{
+	element1,overlay,surface204.png,0,0
+}
+
+surface.append26,1026
+{
+	element1,overlay,surface205.png,0,0
+}
+
+surface.append27,1027
+{
+	element1,overlay,surface206.png,0,0
+}
+
+surface.append28,1028
+{
+	element1,overlay,surface207.png,0,0
+}
+
+surface.append29,1029
+{
+	element1,overlay,surface208.png,0,0
+}
+
+surface.append30,1030
+{
+	element1,overlay,surface209.png,0,0
+}
+
+surface.append31,1031
+{
+	element1,overlay,surface210.png,0,0
+}
+surface.append32,1032
+{
+	element1,overlay,surface211.png,0,0
+}
+
+surface.append33,1033
+{
+	element1,overlay,surface212.png,0,0
+}
+
+surface.append34,1034
+{
+	element1,overlay,surface213.png,0,0
+}
+
+surface.append35,1035
+{
+	element1,overlay,surface214.png,0,0
+}
+
+surface.append36,1036
+{
+	element1,overlay,surface215.png,0,0
+}
+
+surface.append37,1037
+{
+	element1,overlay,surface216.png,0,0
+}
+
+surface.append38,1038
+{
+	element1,overlay,surface217.png,0,0
+}
+
+surface.append39,1039
+{
+	element1,overlay,surface218.png,0,0
+}
+
+surface.append40,1040
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8190,0-800,0,0
+	animation0.pattern1,overlay,8189,50,0,0
+	animation0.pattern2,overlay,8190,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface.append41,1041
+{
+	element1,overlay,surface301.png,0,0
+}
+
+surface.append42,1042
+{
+	element1,overlay,surface302.png,0,0
+}
+
+surface.append43,1043
+{
+	element1,overlay,surface303.png,0,0
+}
+
+surface.append44,1044
+{
+	element1,overlay,surface304.png,0,0
+}
+
+surface.append45,1045
+{
+	element1,overlay,surface305.png,0,0
+}
+
+surface.append46,1046
+{
+	element1,overlay,surface306.png,0,0
+}
+
+surface.append47,1047
+{
+	element1,overlay,surface307.png,0,0
+}
+
+surface.append48,1048
+{
+	element1,overlay,surface308.png,0,0
+}
+
+surface.append49,1049
+{
+	element1,overlay,surface309.png,0,0
+}
+
+surface.append50,1050
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8184,0-800,0,0
+	animation0.pattern1,overlay,8183,50,0,0
+	animation0.pattern2,overlay,8184,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface.append51,1051
+{
+	element1,overlay,surface401.png,0,0
+}
+
+surface.append52,1052
+{
+	element1,overlay,surface402.png,0,0
+}
+
+surface.append53,1053
+{
+	element1,overlay,surface403.png,0,0
+}
+
+surface.append54,1054
+{
+	element1,overlay,surface404.png,0,0
+}
+
+surface.append55,1055
+{
+	element1,overlay,surface405.png,0,0
+}
+
+surface.append56,1056
+{
+	element1,overlay,surface406.png,0,0
+}
+
+surface.append57,1057
+{
+	element1,overlay,surface407.png,0,0
+}
+
+surface.append58,1058
+{
+	element1,overlay,surface408.png,0,0
+}
+
+surface.append59,1059
+{
+	element1,overlay,surface409.png,0,0
+}
+
+surface.append60,1060
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8188,0-800,0,0
+	animation0.pattern1,overlay,8187,50,0,0
+	animation0.pattern2,overlay,8188,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface.append61,1061
+{
+	element1,overlay,surface501.png,0,0
+}
+
+surface.append62,1062
+{
+	element1,overlay,surface502.png,0,0
+}
+
+surface.append63,1063
+{
+	element1,overlay,surface503.png,0,0
+}
+
+surface.append64,1064
+{
+	element1,overlay,surface504.png,0,0
+}
+
+surface.append65,1065
+{
+	element1,overlay,surface505.png,0,0
+}
+
+surface.append66,1066
+{
+	element1,overlay,surface506.png,0,0
+}
+
+surface.append67,1067
+{
+	element1,overlay,surface507.png,0,0
+}
+
+surface.append68,1068
+{
+	element1,overlay,surface508.png,0,0
+}
+
+surface.append69,1069
+{
+	element1,overlay,surface509.png,0,0
+}
+
+surface.append70,1070
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8185,0-800,0,0
+	animation0.pattern1,overlay,-1,100,0,0
+}
+
+surface.append71,1071
+{
+	element1,overlay,surface601.png,0,0
+}
+
+surface.append72,1072
+{
+	element1,overlay,surface602.png,0,0
+}
+
+surface.append73,1073
+{
+	element1,overlay,surface603.png,0,0
+}
+
+surface.append74,1074
+{
+	element1,overlay,surface604.png,0,0
+}
+
+surface.append75,1075
+{
+	element1,overlay,surface605.png,0,0
+}
+
+surface.append76,1076
+{
+	element1,overlay,surface606.png,0,0
+}
+
+surface.append77,1077
+{
+	element1,overlay,surface607.png,0,0
+}
+
+surface.append78,1078
+{
+	element1,overlay,surface608.png,0,0
+}
+
+surface.append79,1079
+{
+	element1,overlay,surface609.png,0,0
+}
+
+surface.append80,1080
+{
+	element1,overlay,surface610.png,0,0
+}
+
+surface.append81,1081
+{
+	element1,overlay,surface611.png,0,0
+}
+
+surface.append82,1082
+{
+	element1,overlay,surface612.png,0,0
+}
+
+surface.append83,1083
+{
+	element1,overlay,surface613.png,0,0
+}
+
+surface.append84,1084
+{
+	element1,overlay,surface614.png,0,0
+}
+
+surface.append85,1085
+{
+	element1,overlay,surface615.png,0,0
+}
+
+surface.append86,1086
+{
+	element1,overlay,surface616.png,0,0
+}
+
+surface.append87,1087
+{
+	element1,overlay,surface617.png,0,0
+}
+
+surface.append88,1088
+{
+	element1,overlay,surface618.png,0,0
+}
+
+surface.append89,1089
+{
+	element1,overlay,surface619.png,0,0
+}
+
+surface.append90,1090
+{
+	element1,overlay,surface310.png,0,0
+}
+
+surface.append91,1091
+{
+	element1,overlay,surface510.png,0,0
+}
+
+surface.append92,1092
+{
+	element1,overlay,surface511.png,0,0
+}
+
+surface.append93,1093
+{
+	element1,overlay,surface512.png,0,0
+}
+
+surface.append94,1094
+{
+	element1,overlay,surface410.png,0,0
+}
+
+surface.append95,1095
+{
+	element1,overlay,surface219.png,0,0
+}
+
+surface.append96,1096
+{
+	element1,overlay,surface220.png,0,0
+}
+
+surface.append97,1097
+{
+	element1,overlay,surface221.png,0,0
+}
+
+// 待機中サーフェス
+surface.append98
+{
+	animation2.interval,periodic,4
+	animation2.pattern0,alternativestart,(4,4,5)
+
+	animation3.interval,periodic,15
+	animation3.pattern0,alternativestart,(4,4,5,6,7,8)
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,8192,0-800,0,0
+	animation4.pattern1,overlay,8191,50,0,0
+	animation4.pattern2,overlay,8192,50,0,0
+	animation4.pattern3,overlay,-1,50,0,0
+
+	animation5.interval,never
+	animation5.pattern0,overlay,8192,0-400,0,0
+	animation5.pattern1,overlay,8191,50,0,0
+	animation5.pattern2,overlay,8192,50-500,0,0
+	animation5.pattern3,overlay,-1,50,0,0
+	
+	animation6.interval,never
+	animation6.option,exclusive,(2,4,5)
+	animation6.pattern0,base,4,600,0,0
+	animation6.pattern1,base,48,1000-1500,0,0
+	animation6.pattern2,base,4,2000-3000,0,0
+	animation6.pattern3,base,6,1000-1500,0,0
+	animation6.pattern4,base,0,400-500,0,0
+
+	animation7.interval,never
+	animation7.option,exclusive,(2,4,5)
+	animation7.pattern0,base,60,600,0,0
+	animation7.pattern1,overlay,8188,1000-3000,0,0
+	animation7.pattern2,overlay,8187,50,0,0
+	animation7.pattern3,overlay,8188,50,0,0
+	animation7.pattern4,overlay,-1,50,0,0
+	animation7.pattern5,overlay,8188,1000-3000,0,0
+	animation7.pattern6,overlay,8187,50,0,0
+	animation7.pattern7,overlay,8188,50,0,0
+	animation7.pattern8,overlay,-1,50,0,0
+	animation7.pattern9,base,6,500-1500,0,0
+	animation7.pattern10,base,0,400-500,0,0
+	
+	animation8.interval,never
+	animation8.option,exclusive,(2,4,5)
+	animation8.pattern0,base,70,600,0,0
+	animation8.pattern1,overlay,8185,1000-2000,0,0
+	animation8.pattern2,overlay,-1,500-1000,0,0
+	animation8.pattern3,base,75,0,0,0
+	animation8.pattern4,overlay,8185,1000-3000,0,0
+	animation8.pattern5,overlay,-1,100,0,0
+	animation8.pattern6,overlay,8185,1000-3000,0,0
+	animation8.pattern7,overlay,-1,100,0,0
+	animation8.pattern8,base,6,1000-2000,0,0
+	animation8.pattern9,base,0,400-500,0,0
+}
+
+surface.append1098
+{
+	animation0.interval,periodic,4
+	animation0.pattern0,overlay,8192,0-800,0,0
+	animation0.pattern1,overlay,8191,50,0,0
+	animation0.pattern2,overlay,8192,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+// 相方サーフェス
+surface6000
+{
+	element0,base,surface6000.png,0,0
+}
+
+surface6006
+{
+	element0,base,surface10.png,0,0
+	animation0.interval,runonce
+	animation0.pattern1,base,6005,70
+	animation0.pattern2,base,6004,70
+	animation0.pattern3,base,6003,70
+	animation0.pattern4,base,6002,70
+	animation0.pattern5,base,6001,70
+	animation0.pattern6,base,6000,100
+}
+
+surface6007
+{
+	element0,base,surface6000.png,0,0
+	animation0.interval,runonce
+	animation0.pattern1,base,6000,100
+	animation0.pattern2,base,6001,70
+	animation0.pattern3,base,6002,70
+	animation0.pattern4,base,6003,70
+	animation0.pattern5,base,6004,70
+	animation0.pattern6,base,6005,70
+	animation0.pattern7,base,10,70
+}
